@@ -92,7 +92,7 @@ export const Home = (props: any) => {
 
                 {small.map((title: any, index: number) => {
                     return (
-                        <View style={styles.mainBox} >
+                        <TouchableOpacity style={styles.mainBox} >
 
                             <View style={{ flex: 0.35, justifyContent: 'center', alignItems: 'center', }}>
                                 <Image style={{ flex: 0.7 }} source={title.img} resizeMode='contain' />
@@ -111,7 +111,7 @@ export const Home = (props: any) => {
 
                                 </View>
                             </View>
-                        </View>
+                        </TouchableOpacity>
                     );
 
                 })}
